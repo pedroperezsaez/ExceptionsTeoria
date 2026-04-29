@@ -31,8 +31,8 @@ public class Main {
 
 
     }
-
-    static int divideix(int a, int b) throws Exception {
+        //tambien se puede poner throws Exception en vez d eir poniendo nombre por nombre pero no es lo suyo
+    static int divideix(int a, int b) throws DivisioZeroZeroException, DivisioPerZeroException {
        if (b==0){
          if (a==0)throw new DivisioZeroZeroException();
          throw new DivisioPerZeroException();
